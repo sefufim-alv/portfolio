@@ -2,7 +2,7 @@ body {
   background-color: #0a1828;
 }
 .hero {
-  height: 90vh;
+  height: 100vh;
   padding: 0 20px;
 }
 #nav a {
@@ -36,4 +36,22 @@ p {
 .navbar-toggler:focus-visible {
   box-shadow: none !important;
   outline: none !important;
+}
+
+/* Projects section */
+.projects {
+  height: 100vh;
+}
+
+.project_header {
+  height: 10%;
+  justify-content: end;
+  padding-left: 20px;
+}
+.project_header h2 {
+  border-bottom: solid #178582;
+  font-size: 30px;
+  color: #bfa181;
+  padding-bottom: 5px;
+  width: 90%;
 }
