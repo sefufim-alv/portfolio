@@ -1,0 +1,39 @@
+body {
+  background-color: #0a1828;
+}
+.hero {
+  height: 90vh;
+  padding: 0 20px;
+}
+#nav a {
+  color: #178582;
+}
+#about_me h1,
+p {
+  color: #bfa181;
+  font-family: "Gruppo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#about_me h1 {
+  font-size: 60px;
+}
+.lead {
+  font-size: 20px;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23178582' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: #178582;
+  background-color: transparent !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
