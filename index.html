@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -53,17 +57,41 @@
         </div>
       </div>
     </nav>
-    <section
-      id="about_me"
-      class="hero d-flex flex-column justify-content-center align-items-center text-center"
+    <div
+      class="project_header d-flex flex-column justify-content-left mt-5 mb-4"
     >
-      <h1 class="display-3 fw-bold">Hi! Welcome</h1>
-      <p class="lead">I'm Sefufim Alvarez</p>
-      <p id="sub_text">
-        I am currently a student at Portland State University, pursuing a degree
-        in Computer Science. I am passionate about building software, exploring
-        new technologies, and solving challenging problems.
-      </p>
+      <h2>About me</h2>
+    </div>
+
+    <section class="hero , d-flex flex-column align-items-center">
+      <img
+        class="pfp"
+        src="./assets/pfp.png"
+        alt="profile picture"
+        loading="lazy"
+      />
+      <div
+        id="about_me"
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <p class="sub_text">
+          Hi there 👋🏼, Sefufim Alvarez! I'm a Fullstack developer from Salem,
+          Oregon. After switching majors multiple times, I discovered computer
+          science and have been sold ever since. I thrive in collaborative
+          environments and enjoy working with teams to solve challenges. At the
+          moment, I'm studying computer science at Portland State University and
+          have completed a coding boot camp at the University of Oregon. I'm
+          currently open to new opportunities! If you're interested in
+          collaborating or working together, feel free to reach out! Whether
+          it's a potential project, freelance work, or just a friendly chat, I'm
+          always excited to connect.
+        </p>
+        <div class="button_container">
+          <a href="./assets/Resume (1).pdf" class="btn btn-info" role="button"
+            >Resume <i class="bi bi-download"></i>
+          </a>
+        </div>
+      </div>
     </section>
     <section id="project" class="projects">
       <div class="project_header d-flex flex-column justify-content-left">
@@ -164,22 +192,22 @@
             <div class="carousel-item">
               <div class="card_wrap">
                 <div class="card" style="width: 18rem">
-                  <div class="gameYap d-flex justify-content-center">
+                  <div class="note_taker d-flex justify-content-center">
                     <img
-                      src="./assets/gameYap.svg"
+                      src="./assets/noteTaker.svg"
                       class="card-img-top"
-                      alt="Game-Yap website demo"
+                      alt="Note taker website demo"
                     />
                   </div>
 
                   <div class="card-body">
-                    <h5 class="card-title text-center">Game-Yap</h5>
+                    <h5 class="card-title text-center">Note Taker</h5>
                     <div
                       class="buttons d-flex justify-content-center justify-content-around py-3"
                     >
                       <a
                         role="button"
-                        href="https://github.com/sefu-alv/Game-Yap"
+                        href="https://github.com/sefu-alv/note-taker"
                         class="btn btn-outline-dark"
                       >
                         CODE REPO
@@ -199,8 +227,6 @@
                       <li>HTML</li>
                       <li>CSS</li>
                       <li>Javascript</li>
-                      <li>Node.js</li>
-                      <li>Express.js</li>
                     </ul>
                   </div>
                 </div>
@@ -209,33 +235,33 @@
             <div class="carousel-item">
               <div class="card_wrap">
                 <div class="card" style="width: 18rem">
-                  <div class="gameYap d-flex justify-content-center">
+                  <div class="movie_nest d-flex justify-content-center">
                     <img
-                      src="./assets/gameYap.svg"
+                      src="./assets/movienest.svg"
                       class="card-img-top"
                       alt="Game-Yap website demo"
                     />
                   </div>
 
                   <div class="card-body">
-                    <h5 class="card-title text-center">Game-Yap</h5>
+                    <h5 class="card-title text-center">Movie Nest</h5>
                     <div
                       class="buttons d-flex justify-content-center justify-content-around py-3"
                     >
                       <a
                         role="button"
-                        href="https://github.com/sefu-alv/Game-Yap"
+                        href="https://github.com/sefu-alv/movie-nest"
                         class="btn btn-outline-dark"
                       >
                         CODE REPO
                       </a>
-                      <button
+                      <a
                         role="button"
                         class="btn btn-outline-dark"
-                        disabled
+                        href="https://sefu-alv.github.io/movie-nest/"
                       >
                         LIVE DEMO
-                      </button>
+                      </a>
                     </div>
 
                     <ul
@@ -244,8 +270,7 @@
                       <li>HTML</li>
                       <li>CSS</li>
                       <li>Javascript</li>
-                      <li>Node.js</li>
-                      <li>Express.js</li>
+                      <li>API</li>
                     </ul>
                   </div>
                 </div>
@@ -272,6 +297,40 @@
           </button>
         </div>
       </div>
+    </section>
+    <section class="d-flex flex-column align-items-center">
+      <h3>Contact Me</h3>
+      <form>
+        <div class="flex">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
