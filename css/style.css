@@ -391,4 +391,10 @@ form {
   .container a {
     font-size: 30px;
   }
+  #name_input {
+    height: 50px;
+  }
+  #email_input {
+    height: 50px;
+  }
 }
